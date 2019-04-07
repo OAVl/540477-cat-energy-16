@@ -1,0 +1,27 @@
+.additional-product {
+  border-bottom: 1px solid #e6e6e6;
+
+  list-style: none;
+}
+
+.additional-product__title {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 16px;
+
+  @include font(16px, 16px, 400);
+  text-transform: uppercase;
+}
+
+.additional-product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+
+  @include font(14px, 14px, 400);
+  font-family: $second-font;
+}
+
+.additional-product__button {
+  margin-bottom: 18px;
+}

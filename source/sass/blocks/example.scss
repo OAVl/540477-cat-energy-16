@@ -1,0 +1,80 @@
+.example {
+  margin-top: 22px;
+  padding-top: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.example__header {
+  margin: 0;
+  margin-left: 20px;
+
+  @include font(36px, 60px, 400);
+}
+
+.example__description {
+  margin: 0;
+  margin-left: 20px;
+  width: 266px;
+
+  @include font(14px, 18px, 400);
+  font-family: $second-font;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0;
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+
+  list-style: none;
+}
+
+.example__item-border {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+.example__item-result {
+  @include font(24px, 24px, 400);
+  text-transform: uppercase;
+}
+
+.example__item-description {
+  width: 58px;
+
+  @include font(12px, 12px, 400);
+  font-family: $second-font;
+  text-transform: lowercase;
+}
+
+.example__expenses {
+  @include font(14px, 20px, 400);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__image {
+  padding-top: 43px;
+  padding-bottom: 40px;
+}
+
+.example__result {
+  padding-bottom: 39px;
+
+  text-align: center;
+}
+
+.example__result-start,
+.example__result-end {
+  @include font(16px, 20px, 400);
+  text-transform: uppercase;
+  text-align: center;
+}

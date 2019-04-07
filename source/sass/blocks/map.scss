@@ -1,0 +1,29 @@
+.map {
+  background-color: white;
+  &--color {
+    background-color: #f2f2f2;
+  }
+}
+
+.map__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-left: 20px;
+  padding-top: 31px;
+  padding-bottom: 26px;
+}
+
+.map__title {
+  margin: 0;
+
+  @include font(16px, 20px, 400);
+  text-transform: uppercase;
+}
+
+.map__address {
+  margin: 0;
+
+  @include font(14px, 20px, 400);
+  font-family: $second-font;
+}

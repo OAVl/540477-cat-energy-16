@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+@import "blocks/page-header";
+@import "blocks/visually-hidden";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/banner";
+@import "blocks/program";
+@import "blocks/advantages";
+@import "blocks/example";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/social-list";
+@import "blocks/academy-logo";
+@import "blocks/catalog";
+@import "blocks/product-item";
+@import "blocks/button";
+@import "blocks/additional";
+@import "blocks/additional-product";
+@import "blocks/present";
+@import "blocks/selection";
+@import "blocks/name-list";
+@import "blocks/selection-program";
+@import "blocks/contacts-list";
+@import "blocks/comment";
+@import "blocks/additionally-list";
+
+html,
+body {
+  min-width: 320px;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+}

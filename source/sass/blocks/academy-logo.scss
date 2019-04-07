@@ -1,0 +1,23 @@
+.academy-logo {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.academy-logo__text {
+  margin: 0;
+  padding-top: 9px;
+
+  @include font(16px, 16px, 400);
+  font-family: $second-font;
+  color: #444444;
+}
+
+.academy-logo__image {
+  margin: 0;
+  fill: #666666;
+}

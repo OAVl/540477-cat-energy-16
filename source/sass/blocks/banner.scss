@@ -1,0 +1,36 @@
+.banner {
+  margin: 0;
+
+  text-align: center;
+  color: white;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.banner__header {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @include font(36px, 36px, 400);
+}
+
+.banner__slogan {
+  margin: 0;
+  padding-bottom: 29px;
+
+  @include font(14px, 14px, 400);
+  text-transform: uppercase;
+}
+
+.banner__image {
+  margin: 0;
+
+  padding-bottom: 15px;
+}
+
+.banner__button {
+  margin: 0;
+  margin-bottom: 22px;
+}
