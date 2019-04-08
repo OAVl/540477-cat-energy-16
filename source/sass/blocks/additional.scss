@@ -1,0 +1,19 @@
+.additional {
+  width: 280px;
+  margin-left: 20px;
+}
+
+.additional__header {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 31px;
+
+  @include font(24px, 24px, 400);
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+}

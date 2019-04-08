@@ -1,0 +1,16 @@
+@mixin toggle() {
+  width: 24px;
+  height: 18px;
+  margin-top: 20px;
+  margin-right: 20px;
+
+  background-color: white;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+@mixin font($font-size: 14px, $line-height: 18px, $font-weight: 400 ) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}

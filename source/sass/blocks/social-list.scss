@@ -1,0 +1,41 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
+  margin: 0;
+  padding-left: 93px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  list-style: none;
+  text-decoration: none;
+}
+
+.social-list__item--vk {
+  width: 22px;
+  height: 12px;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/icon-vk-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.social-list__item--inst {
+  width: 16px;
+  height: 16px;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/icon-insta-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.social-list__item--fb {
+  width: 10px;
+  height: 19px;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/icon-fb-mobile.svg");
+  background-repeat: no-repeat;
+}

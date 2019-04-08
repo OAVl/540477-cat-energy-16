@@ -1,0 +1,19 @@
+.catalog__header {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+
+  @include font(36px, 60px, 400);
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  border-bottom: 1px solid #e6e6e6;
+}

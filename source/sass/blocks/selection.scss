@@ -1,0 +1,48 @@
+.selection {
+  width: 280px;
+  margin-left: 20px;
+}
+
+.selection__header {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  @include font(36px, 60px, 400);
+}
+
+.selection__description {
+  width: 227px;
+  margin: 0;
+  padding-bottom: 40px;
+
+  @include font(14px, 18px, 400);
+  text-transform: uppercase;
+}
+
+.selection__list {
+  margin: 0;
+  padding: 0;
+
+  @include font(16px, 18px, 400);
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.selection__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include font(24px, 24px, 400);
+}
+
+.selection__legend {
+  padding-top: 24px;
+  padding-bottom: 34px;
+
+  @include font(14px, 16px, 400);
+  font-family: $second-font;
+  text-align: center;
+}

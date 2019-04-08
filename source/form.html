@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-      <meta charset="UTF-8">
-      <title>Кэт энерджи: подбор программы</title>
+    <meta charset="UTF-8">
+    <title>Кэт энерджи: подбор программы</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/pic1.svg" width="10" height="10" alt="Логотип Кэт энерджи">
-      </a>
-      <a class="page-header__logo">
-        <img class="page-header__logo-text logo" src="img/pic2.svg" width="10" height="10" alt="Кэт энерджи">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo-image">
+          <img src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт энерджи">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper main-nav__wrapper--menu">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -33,7 +36,7 @@
     <main class="page-selection">
       <section class="selection">
         <h1 class="selection__header">Подбор программы</h1>
-        <p class="selection__description">Заполните анкету и подберем программу питания для вашего кота</p>
+        <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="selection__wrapper">
             <div class="selection__filter">
@@ -96,7 +99,7 @@
             <h2 class="selection__title">Комментарий</h2>
             <div class="selection__filter comment">
               <label>
-                <textarea class="comment__window" name="comment">Расскажи обо всех повадках кота</textarea>
+                <textarea class="comment__window" name="comment" cols="42">Расскажите обо всех повадках кота</textarea>
               </label>
             </div>
           </div>
@@ -128,7 +131,7 @@
             </div>
           </div>
 
-          <button class="selection__button button" type="submit">Отправить заявку</button>
+          <button class="selection__button button button--green" type="submit">Отправить заявку</button>
 
           <div class="selection__legend">
             <sup>*</sup> — Обязательные поля
@@ -136,33 +139,42 @@
         </form>
       </section>
 
-      <section class="map">
-        <div class="map__wrapper address">
-          <h3 class="map__header address__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <div class="map__address">
-            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="address__city">Санкт-Петербург</span>
-          </div>
+      <section class="map map--color">
+        <div class="map__wrapper">
+          <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="map__image" src="img/pic9" width="1" height="2" alt="Карта">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
       </section>
     </main>
 
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-text logo" src="img/pic2.svg" width="10" height="10" alt="Кэт энерджи">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="127" height="23" alt="Кэт энерджи">
       </a>
       <div class="page-footer__wrapper">
         <ul class="social-list">
-          <li class="social-list__item"><a href="#">Вконтакте</a></li>
-          <li class="social-list__item"><a href="#">Инстаграм</a></li>
-          <li class="social-list__item"><a href="#">Фейсбук</a></li>
+          <li class="social-list__item social-list__item--vk">
+            <a href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--inst">
+            <a href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--fb">
+            <a href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="academy-logo">
         <div class="academy-logo__text">HTML Academy</div>
         <a href="#">
-          <img class="academy-logo__image" src="img/pic10.svg" width="1" height="1" alt="Логотип HTML Academy">
+          <img class="academy-logo__image" src="img/htmlacademy.svg" width="60" height="60" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

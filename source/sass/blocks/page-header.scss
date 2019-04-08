@@ -1,0 +1,30 @@
+.page-header {
+  @include font(20px, 20px, 500);
+  color: black;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.page-header__logo-image img {
+  margin-left: 20px;
+  margin-top: 11px;
+}
+
+.page-header__toggle {
+  @include toggle();
+  background-image: url("../img/icon-mobile-menu.svg");
+}
+
+.page-header__toggle-close {
+  display: none;
+
+  @include toggle();
+  background-image: url("../img/icon-close.svg");
+}
