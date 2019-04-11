@@ -12,3 +12,28 @@
 
   border-bottom: 1px solid #d9d9d9;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-footer__logo-image {
+    padding-top: 63px;
+    padding-bottom: 62px;
+    padding-left: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

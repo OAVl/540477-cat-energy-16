@@ -27,3 +27,71 @@
   @include font(14px, 20px, 400);
   font-family: $second-font;
 }
+
+.map__image-big {
+  display: none;
+}
+
+.map__image-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    width: 630px;
+    margin-left: 70px;
+    padding-top: 68px;
+    padding-bottom: 64px;
+  }
+
+  .map__title {
+    width: 160px;
+
+    @include font(20px, 25px, 400);
+  }
+
+  .map__address {
+    width: 155px;
+
+    @include font(16px, 20px, 400);
+    text-align: right;
+  }
+
+  .map__image {
+    display: none;
+  }
+
+  .map__image-big {
+    display: block;
+  }
+
+  .map__image-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__wrapper {
+    position: absolute;
+    top: 95px;
+
+    margin-left: 110px;
+    padding-left: 76px;
+    padding-right: 90px;
+    width: 403px;
+
+    background-color: white;
+  }
+
+  .map__image-big {
+    display: none;
+  }
+
+  .map__image-desktop {
+    display: block;
+  }
+}

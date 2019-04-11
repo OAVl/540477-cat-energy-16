@@ -1,5 +1,7 @@
+@import "normalize";
 @import "variables";
 @import "mixins";
+@import "blocks/global";
 @import "blocks/page-header";
 @import "blocks/visually-hidden";
 @import "blocks/main-nav";
@@ -24,18 +26,3 @@
 @import "blocks/contacts-list";
 @import "blocks/comment";
 @import "blocks/additionally-list";
-
-html,
-body {
-  min-width: 320px;
-}
-
-body {
-  padding: 0;
-  margin: 0 auto;
-  width: 320px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: black;
-}

@@ -30,7 +30,90 @@
   padding-bottom: 15px;
 }
 
+.banner__image-big {
+  display: none;
+}
+
+.banner__image-desktop {
+  display: none;
+}
+
 .banner__button {
   margin: 0;
   margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    position: relative;
+
+    text-align: left;
+    color: black;
+
+    background-image: none;
+  }
+
+  .banner__header {
+    width: 427px;
+    margin-left: 120px;
+    padding-bottom: 45px;
+
+    @include font(60px, 60px, 400);
+  }
+
+  .banner__slogan {
+    margin-left: 120px;
+    padding-bottom: 21px;
+
+    @include font(20px, 20px, 400);
+  }
+
+  .banner__image {
+    display: none;
+  }
+
+  .banner__image-big {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .banner__image-desktop {
+    display: none;
+  }
+
+  .banner__button {
+    position: absolute;
+    top: 265px;
+    left: 120px;
+
+    width: 245px;
+
+    padding-left: 25px;
+    padding-right: 29px;
+
+    @include font(20px, 20px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    position: absolute;
+    top: 225px;
+    left: 70px;
+  }
+
+  .banner__image-big {
+    display: none;
+  }
+
+  .banner__image-desktop {
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 492px;
+  }
+
+  .banner__button {
+
+  }
 }

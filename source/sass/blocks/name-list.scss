@@ -7,3 +7,19 @@
 .name-list__item {
   margin-bottom: 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .name-list {
+    border-bottom: none;
+  }
+
+  .name-list__item {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name-list {
+    width: 570px;
+  }
+}

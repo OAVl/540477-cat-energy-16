@@ -17,3 +17,36 @@
 .catalog__item {
   border-bottom: 1px solid #e6e6e6;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__header {
+    padding-left: 30px;
+
+    @include font(60px, 60px, 400);
+
+    border-bottom: none;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  .catalog__item {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__header {
+    padding-top: 85px;
+    padding-left: 110px;
+  }
+
+  .catalog__list {
+    width: 1300px;
+    margin-left: 70px;
+  }
+}

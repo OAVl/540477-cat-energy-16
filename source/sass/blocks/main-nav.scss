@@ -1,9 +1,37 @@
 .main-nav__list {
-  display: none;
-  margin: 0;
+  //display: none;
+  margin: 0 auto;
   padding: 0;
 
   text-align: center;
 
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin-left: 96px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 480px;
+    margin-left: 407px;
+    padding-left: 132px;
+    padding-right: 110px;
+    padding-bottom: 590px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-nav__list--wrapper {
+    padding-bottom: 0;
+
+    background-image: none;
+  }
 }

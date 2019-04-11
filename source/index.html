@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,11 +13,17 @@
         <a class="page-header__logo-image">
           <img src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт энерджи">
         </a>
+        <a class="page-header__logo-big">
+          <img src="img/logo-tablet.svg" width="172" height="57" alt="Логотип Кэт энерджи">
+        </a>
+        <a class="page-header__logo-desktop">
+          <img src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Кэт энерджи">
+        </a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
-        <div class="main-nav__wrapper main-nav__wrapper--menu">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -38,7 +44,9 @@
         <h1 class="banner__header">Функциональное питание для котов</h1>
         <p class="banner__slogan">Занялся собой? Займись котом!</p>
         <img class="banner__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Питание">
-        <button class="banner__button button button--green" type="button">Подобрать пограмму</button>
+        <img class="banner__image-big" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Питание">
+        <img class="banner__image-desktop" src="img/index-can-desktop@1x.png" width="552" height="499" alt="Питание">
+        <button class="banner__button button button--green" type="button">Подобрать программу</button>
       </section>
 
       <section class="program">
@@ -60,7 +68,7 @@
             <div class="program__wrapper">
               <div class="program__image-title">
                 <span class="program__background"></span>
-                <img class="program__image" src="img/icon-cat-pro.svg" width="67" height="28" alt="Кот в массе">
+                <img class="program__image program__image--padding" src="img/icon-cat-pro.svg" width="67" height="28" alt="Кот в массе">
                 <h3 class="program__title program__title--padding">Набор массы</h3>
               </div>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
@@ -105,30 +113,32 @@
 
       <section class="example">
         <h2 class="example__header">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день.</p>
-        <div class="example__wrapper">
-          <ul class="example__list">
-            <li class="example__item">
-              <fieldset class="example__item-border">
-                <span class="example__item-result">5 кг</span>
-                <legend class="example__item-description" align="center">Снижение веса</legend>
-              </fieldset>
-            </li>
-            <li class="example__item">
-              <fieldset class="example__item-border">
-                <span class="example__item-result">60 дней</span>
-                <legend class="example__item-description" align="center">Затрачено времени</legend>
-              </fieldset>
-            </li>
-          </ul>
-        </div>
-        <div class="example__expenses">Затраты на питание: <span class="example__expenses-price">15 000 руб.</span></div>
-        <img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот">
-        <div class="example__result">
-          <span class="example__result-start">Было</span>
-          <span class="example__result-end">Стало</span>
+        <div class="example__wrapper-background">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+            16 часов в день.</p>
+          <div class="example__wrapper">
+            <ul class="example__list">
+              <li class="example__item">
+                <div class="example__item-border">
+                  <span class="example__item-result">5 кг</span>
+                  <span class="example__item-description">Снижение веса</span>
+                </div>
+              </li>
+              <li class="example__item">
+                <div class="example__item-border">
+                  <span class="example__item-result">60 дней</span>
+                  <span class="example__item-description">Затрачено времени</span>
+                </div>
+              </li>
+            </ul>
+            <div class="example__expenses">Затраты на питание: <span class="example__expenses-price">15 000 руб.</span></div>
+          </div>
+          <img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот">
+          <div class="example__result">
+            <span class="example__result-start">Было</span>
+            <span class="example__result-end">Стало</span>
+          </div>
         </div>
       </section>
 
@@ -138,6 +148,8 @@
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+        <img class="map__image-big" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Карта">
+        <img class="map__image-desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Карта">
       </section>
     </main>
 

@@ -1,3 +1,21 @@
 .contacts-list__item {
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list__item {
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .contacts-list__item {
+    width: 570px;
+  }
+}
