@@ -7,14 +7,14 @@
 
 .example__header {
   margin: 0;
-  margin-left: 20px;
+  padding-left: 20px;
 
   @include font(36px, 60px, 400);
 }
 
 .example__description {
   margin: 0;
-  margin-left: 20px;
+  padding-left: 20px;
   width: 266px;
 
   @include font(14px, 18px, 400);
@@ -34,11 +34,14 @@
 }
 
 .example__item-border {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
   text-align: center;
 
+  border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
 
@@ -77,4 +80,123 @@
   @include font(16px, 20px, 400);
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    position: relative;
+
+    background-color: white;
+  }
+
+  .example__header {
+    padding-left: 30px;
+    margin-bottom: 61px;
+
+    @include font(60px, 60px, 400);
+  }
+
+  .example__description {
+    width: 680px;
+    padding-left: 30px;
+
+    @include font(16px, 24px, 400);
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .example__list {
+    width: 370px;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 249px;
+
+  }
+
+  .example__item-result {
+    @include font(30px, 37px, 400);
+  }
+
+  .example__item-description {
+    width: 130px;
+
+    @include font(14px, 14px, 400);
+  }
+
+  .example__expenses {
+    width: 175px;
+    margin-top: 36px;
+
+    @include font(20px, 20px, 400);
+    text-align: right;
+  }
+
+  .example__image {
+    position: absolute;
+    left: 80px;
+  }
+
+  .example__result {
+    padding-top: 370px;
+
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: 1440px;
+  }
+
+  .example__header {
+    padding-left: 110px;
+  }
+
+  .example__description {
+    width: 433px;
+  }
+
+  .example__list {
+    padding-top: 70px;
+    padding-bottom: 57px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 370px;
+  }
+
+  .example__expenses {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin-top: 0;
+    padding-left: 30px;
+  }
+
+  .example__image {
+    position: absolute;
+    top: 10px;
+    left: 780px;
+  }
+
+  .example__result {
+    padding-top: 0;
+    padding-right: 110px;
+
+    text-align: right;
+  }
+
+  .example__wrapper-background {
+    padding-top: 76px;
+    padding-left: 80px;
+
+    background-color: #f2f2f2;
+  }
 }

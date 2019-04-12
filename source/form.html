@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Кэт энерджи: подбор программы</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,19 +13,25 @@
         <a class="page-header__logo-image">
           <img src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт энерджи">
         </a>
+        <a class="page-header__logo-big">
+          <img src="img/logo-tablet.svg" width="172" height="57" alt="Логотип Кэт энерджи">
+        </a>
+        <a class="page-header__logo-desktop">
+          <img src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Кэт энерджи">
+        </a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper main-nav__wrapper--menu">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="main-nav__list main-nav__list--wrapper site-list">
+            <li class="site-list__item site-list__item--wrapper">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--wrapper">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item site-list__item--active site-list__item--wrapper active">
               <a>Подбор программы</a>
             </li>
           </ul>
@@ -38,7 +44,7 @@
         <h1 class="selection__header">Подбор программы</h1>
         <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="selection__wrapper">
+          <div class="selection__wrapper selection__wrapper--display">
             <div class="selection__filter">
               <ul class="selection__list name-list">
                 <li class="name-list__item">
@@ -125,16 +131,18 @@
 
                 <li class="additionally-list__item">
                   <input class="additionally-list__window" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="additionally-list__value" for="vitamins">Витамины</label>
+                  <label class="additionally-list__value additionally-list__value--padding" for="vitamins">Витамины</label>
                 </li>
               </ul>
             </div>
           </div>
 
-          <button class="selection__button button button--green" type="submit">Отправить заявку</button>
+          <div class="selection__wrapper-button">
+            <button class="selection__button button button--green" type="submit">Отправить заявку</button>
 
-          <div class="selection__legend">
-            <sup>*</sup> — Обязательные поля
+            <div class="selection__legend">
+              <sup>*</sup> — Обязательные поля
+            </div>
           </div>
         </form>
       </section>
@@ -145,6 +153,8 @@
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+        <img class="map__image-big" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Карта">
+        <img class="map__image-desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Карта">
       </section>
     </main>
 

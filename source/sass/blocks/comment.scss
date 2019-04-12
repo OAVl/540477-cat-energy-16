@@ -3,3 +3,11 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .comment__window {
+    margin-left: 40px;
+
+    @include font(20px, 30px, 400);
+  }
+}

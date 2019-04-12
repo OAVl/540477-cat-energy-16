@@ -8,3 +8,19 @@
 .selection-program__item {
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .selection-program {
+    border: 1px solid #e6e6e6;
+  }
+
+  .selection-program__item {
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-program {
+    width: 570px;
+  }
+}

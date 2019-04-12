@@ -46,3 +46,82 @@
   font-family: $second-font;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .selection {
+    width: 708px;
+    margin-left: 30px;
+  }
+
+  .selection__header {
+    @include font(60px, 60px, 400);
+  }
+
+  .selection__description {
+    width: 327px;
+    margin-left: 40px;
+
+    @include font(20px, 30px, 400);
+  }
+
+  .selection__list {
+    margin-left: 40px;
+
+    @include font(20px, 20px, 400);
+  }
+
+  .selection__title {
+    margin-left: 40px;
+
+    @include font(36px, 36px, 400);
+  }
+
+  .selection__button {
+    width: 283px;
+
+    @include font(20px, 20px, 400);
+  }
+
+  .selection__legend {
+    @include font(16px, 16px, 400);
+  }
+
+  .selection__wrapper-button {
+    display: flex;
+    justify-content: space-between;
+    width: 563px;
+    margin-left: 40px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection {
+    width: 1220px;
+    margin-left: 110px;
+  }
+
+  .selection__header {
+    margin-left: 40px;
+    padding-top: 80px;
+    padding-bottom: 55px;
+  }
+
+  .selection__wrapper--display {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .selection__title {
+    padding-bottom: 70px;
+  }
+
+  .selection__button {
+    width: 570px;
+  }
+
+  .selection__wrapper-button {
+    width: 865px;
+  }
+}

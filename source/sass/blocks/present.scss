@@ -24,3 +24,49 @@
   @include font(16px, 20px, 400);
   font-family: $second-font;
 }
+
+@media (min-width: $tablet-width) {
+  .present {
+    width: 708px;
+    margin-left: 30px;
+    margin-bottom: 76px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .present-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding-left: 90px;
+  }
+
+  .present__description {
+    width: 163px;
+    padding-top: 75px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .present {
+    position: absolute;
+    top: 1711px;
+    left: 1085px;
+
+    width: 245px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .present-wrapper {
+    display: block;
+    width: 165px;
+    padding-left: 43px;
+  }
+
+  .present__description {
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+}

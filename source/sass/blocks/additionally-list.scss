@@ -5,3 +5,28 @@
 .additionally-list__item {
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .additionally-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 653px;
+  }
+
+  .additionally-list__item {
+    padding-right: 125px;
+    margin-bottom: 55px;
+  }
+
+  .additionally-list__value--padding {
+    margin-right: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally-list {
+    flex-wrap: nowrap;
+    width: 1220px;
+  }
+}
