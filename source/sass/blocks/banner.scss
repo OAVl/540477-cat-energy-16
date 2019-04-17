@@ -24,23 +24,24 @@
   text-transform: uppercase;
 }
 
-.banner__image {
+.banner__image img {
   margin: 0;
 
   padding-bottom: 15px;
 }
 
-.banner__image-big {
-  display: none;
-}
-
-.banner__image-desktop {
-  display: none;
-}
-
 .banner__button {
+  width: 280px;
   margin: 0;
   margin-bottom: 22px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,17 +69,10 @@
     @include font(20px, 20px, 400);
   }
 
-  .banner__image {
-    display: none;
-  }
-
-  .banner__image-big {
-    display: block;
+  .banner__image img {
+    width: 709px;
+    height: 609px;
     margin-left: 30px;
-  }
-
-  .banner__image-desktop {
-    display: none;
   }
 
   .banner__button {
@@ -97,23 +91,22 @@
 
 @media (min-width: $desktop-width) {
   .banner {
+    position: relative;
+  }
+
+  .banner__wrapper {
     position: absolute;
-    top: 225px;
+    top: -575px;
     left: 70px;
   }
 
-  .banner__image-big {
-    display: none;
-  }
-
-  .banner__image-desktop {
+  .banner__image img {
     display: block;
     position: absolute;
     top: -50px;
-    left: 492px;
-  }
+    left: 460px;
 
-  .banner__button {
-
+    width: 552px;
+    height: 499px;
   }
 }

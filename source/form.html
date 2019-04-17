@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <title>Кэт энерджи: подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo-image">
-          <img src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт энерджи">
+        <a>
+          <picture class="page-header__logo-image">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт энерджи">
+          </picture>
         </a>
-        <a class="page-header__logo-big">
-          <img src="img/logo-tablet.svg" width="172" height="57" alt="Логотип Кэт энерджи">
-        </a>
-        <a class="page-header__logo-desktop">
-          <img src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Кэт энерджи">
-        </a>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper main-nav__wrapper--menu">
           <ul class="main-nav__list main-nav__list--wrapper site-list">
             <li class="site-list__item site-list__item--wrapper">
@@ -58,7 +54,7 @@
                 </li>
 
                 <li class="name-list__item">
-                  <label class="name-list__value" for="age-cat">Возраст(лет):<sup>*</sup></label>
+                  <label class="name-list__value" for="age-cat">Возраст(лет):</label>
                   <input class="name-list__window" type="text" name="age" id="age-cat" value="7">
                 </li>
               </ul>
@@ -67,17 +63,20 @@
             <div class="selection__filter">
               <ul class="selection__list selection-program">
                 <li class="selection-program__item">
-                  <input class="selection-program__radio" type="radio" name="advice" id="thin-cat" checked>
+                  <input class="visually-hidden selection-program__radio" type="radio" name="advice" id="thin-cat" checked>
+                  <span class="radio"></span>
                   <label class="selection-program__value" for="thin-cat">Похудение</label>
                 </li>
 
                 <li class="selection-program__item">
-                  <input class="selection-program__radio" type="radio" name="advice" id="inflated-cat">
+                  <input class="visually-hidden selection-program__radio" type="radio" name="advice" id="inflated-cat">
+                  <span class="radio"></span>
                   <label class="selection-program__value" for="inflated-cat">Набор массы</label>
                 </li>
 
                 <li class="selection-program__item">
-                  <input class="selection-program__radio" type="radio" name="advice" id="advice-cat">
+                  <input class="visually-hidden selection-program__radio" type="radio" name="advice" id="advice-cat">
+                  <span class="radio"></span>
                   <label class="selection-program__value" for="advice-cat">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
@@ -85,52 +84,58 @@
           </div>
 
           <div class="selection__wrapper">
-            <h2 class="selection__title">Контактные данные (владельца кота)</h2>
+            <h2 class="selection__title selection__title--contact">Контактные данные (владельца кота)</h2>
             <div class="selection__filter">
               <ul class="selection__list contacts-list">
                 <li class="contacts-list__item">
                   <label class="contacts-list__value" for="email">E-mail:<sup>*</sup></label>
                   <input class="contacts-list__window" type="email" name="email" id="email" value="kuklachev@gmail.com">
+                  <img class="contacts-list__image contacts-list__image--top" src="img/icon-mail.svg" width="17" height="13" alt="email">
                 </li>
 
                 <li class="contacts-list__item">
                   <label class="contacts-list__value" for="phone">Телефон:<sup>*</sup></label>
                   <input class="contacts-list__window" type="tel" name="phone" id="phone" value="8(960)900-60-90">
+                  <img class="contacts-list__image" src="img/icon-phone.svg" width="20" height="20" alt="phone">
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="selection__wrapper">
-            <h2 class="selection__title">Комментарий</h2>
+            <h2 class="selection__title selection__title--comment">Комментарий</h2>
             <div class="selection__filter comment">
               <label>
-                <textarea class="comment__window" name="comment" cols="42">Расскажите обо всех повадках кота</textarea>
+                <textarea class="comment__window" name="comment">Расскажите обо всех повадках кота</textarea>
               </label>
             </div>
           </div>
 
           <div class="selection__wrapper">
-            <h2 class="selection__title">Дополнительно</h2>
+            <h2 class="selection__title selection__title--additionally">Дополнительно</h2>
             <div class="selection__filter">
               <ul class="selection__list additionally-list">
                 <li class="additionally-list__item">
-                  <input class="additionally-list__window" type="checkbox" name="sugar" id="sugar" checked>
+                  <input class="visually-hidden additionally-list__window" type="checkbox" name="sugar" id="sugar" checked>
+                  <span class="check-box"></span>
                   <label class="additionally-list__value" for="sugar">Сахарозаменитель</label>
                 </li>
 
                 <li class="additionally-list__item">
-                  <input class="additionally-list__window" type="checkbox" name="water" id="water">
+                  <input class="visually-hidden additionally-list__window" type="checkbox" name="water" id="water">
+                  <span class="check-box"></span>
                   <label class="additionally-list__value" for="water">Питьевая вода</label>
                 </li>
 
                 <li class="additionally-list__item">
-                  <input class="additionally-list__window" type="checkbox" name="milk" id="milk">
+                  <input class="visually-hidden additionally-list__window" type="checkbox" name="milk" id="milk">
+                  <span class="check-box"></span>
                   <label class="additionally-list__value" for="milk">Молоко</label>
                 </li>
 
                 <li class="additionally-list__item">
-                  <input class="additionally-list__window" type="checkbox" name="vitamins" id="vitamins">
+                  <input class="visually-hidden additionally-list__window" type="checkbox" name="vitamins" id="vitamins">
+                  <span class="check-box"></span>
                   <label class="additionally-list__value additionally-list__value--padding" for="vitamins">Витамины</label>
                 </li>
               </ul>
@@ -152,9 +157,11 @@
           <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
-        <img class="map__image-big" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Карта">
-        <img class="map__image-desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Карта">
+        <picture class="map__image">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+        </picture>
       </section>
     </main>
 
@@ -188,5 +195,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

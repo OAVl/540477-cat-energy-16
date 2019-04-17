@@ -1,6 +1,6 @@
 .present {
   width: 280px;
-  margin-left: 20px;
+  margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 35px;
 
@@ -20,6 +20,8 @@
 .present__description {
   margin: 0;
   padding-bottom: 45px;
+  padding-left: 60px;
+  width: 160px;
 
   @include font(16px, 20px, 400);
   font-family: $second-font;
@@ -28,7 +30,6 @@
 @media (min-width: $tablet-width) {
   .present {
     width: 708px;
-    margin-left: 30px;
     margin-bottom: 76px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -44,15 +45,21 @@
   .present__description {
     width: 163px;
     padding-top: 75px;
+
+    text-align: left;
   }
 
 }
 
 @media (min-width: $desktop-width) {
   .present {
+    position: relative;
+  }
+
+  .present__wrapper {
     position: absolute;
-    top: 1711px;
-    left: 1085px;
+    top: -380px;
+    left: 715px;
 
     width: 245px;
 
@@ -68,5 +75,8 @@
   .present__description {
     padding-top: 0;
     padding-bottom: 35px;
+    padding-left: 0;
+
+    text-align: center;
   }
 }

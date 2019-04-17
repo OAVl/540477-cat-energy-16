@@ -9,11 +9,55 @@
 
   &--green {
     background-color: $main-color;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: #8fc46e;
+    }
   }
   &--grey {
     color: #444444;
     background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: #b9b9b9;
+    }
   }
   border: none;
 }
 
+.button-green {
+  background-color: $main-color;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
+  }
+}
+
+.button-grey {
+  color: #444444;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: #b9b9b9;
+  }
+}

@@ -37,11 +37,31 @@
     color: white;
   }
 
+  .site-list__item a[href] {
+    &:hover {
+      color: #cadfc1;
+    }
+
+    &:active {
+      color: #87bc67;
+    }
+  }
+
   .active {
     border-bottom: 2px solid $main-color;
   }
 
   .site-list__item--wrapper a {
     color: black;
+  }
+
+  .site-list__item--wrapper a[href] {
+    &:hover {
+      color: #707070;
+    }
+
+    &:active {
+      color: #b7b7b7;
+    }
   }
 }
