@@ -3,7 +3,45 @@
 }
 
 .additionally-list__item {
-  margin-bottom: 15px;
+  position: relative;
+
+  margin-bottom: 29px;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.additionally-list__value {
+  padding-left: 46px;
+}
+
+.additionally-list__item::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid #cecece;
+}
+
+.check-box {
+  content: "";
+  position: absolute;
+  left: 5px;
+
+  display: none;
+  width: 21px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.additionally-list__window:checked + .check-box {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +55,20 @@
   .additionally-list__item {
     padding-right: 125px;
     margin-bottom: 55px;
+  }
+
+  .additionally-list__value {
+    padding-left: 57px;
+  }
+
+  .additionally-list__item::before {
+    width: 38px;
+    height: 38px;
+  }
+
+  .check-box {
+    top: 4px;
+    left: 10px;
   }
 
   .additionally-list__value--padding {

@@ -1,9 +1,11 @@
 .additional {
   width: 280px;
-  margin-left: 20px;
+  margin: 0 auto;
 }
 
 .additional__header {
+  position: relative;
+
   margin: 0;
   padding-top: 32px;
   padding-bottom: 31px;
@@ -11,6 +13,18 @@
   @include font(24px, 24px, 400);
 
   border-bottom: 1px solid #e6e6e6;
+}
+
+.additional__header::before {
+  content: "";
+  position: absolute;
+  top: 47px;
+  left: 247px;
+
+  width: 53px;
+  height: 3px;
+
+  background-color: $main-color;
 }
 
 .additional__list {
@@ -21,20 +35,57 @@
 @media (min-width: $tablet-width) {
   .additional {
     width: 708px;
-    margin-left: 30px;
   }
 
   .additional__header {
     padding-top: 72px;
     padding-bottom: 76px;
+    padding-left: 38px;
 
     @include font(36px, 36px, 400);
+  }
+
+  .additional__header::before {
+    top: 94px;
+    left: 412px;
+
+    width: 328px;
+  }
+
+  .additional__header::after {
+    content: "";
+    position: absolute;
+    top: 94px;
+    left: -32px;
+
+    width: 29px;
+    height: 3px;
+
+    background-color: $main-color;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional {
-    margin-left: 110px;
     margin-bottom: 85px;
+    margin-left: 110px;
+  }
+
+  .additional__header {
+    padding-left: 0;
+
+    border-bottom: none;
+  }
+
+  .additional__header::after {
+    left: -110px;
+
+    width: 70px;
+  }
+
+  .additional__header::before {
+    left: 382px;
+
+    width: 957px;
   }
 }

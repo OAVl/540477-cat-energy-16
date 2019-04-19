@@ -5,7 +5,24 @@
 }
 
 .name-list__item {
+  display: flex;
   margin-bottom: 14px;
+}
+
+.name-list__value {
+  margin-top: 15px;
+}
+
+.name-list__window {
+  flex-grow: 1;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+
+  text-transform: uppercase;
+
+  border: 1px solid #e6e6e6;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,7 +31,7 @@
   }
 
   .name-list__item {
-    margin-bottom: 55px;
+    margin-bottom: 20px;
   }
 }
 

@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <title>Кэт энерджи: каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo-image">
-          <img src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт энерджи">
+        <a>
+          <picture class="page-header__logo-image">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт энерджи">
+          </picture>
         </a>
-        <a class="page-header__logo-big">
-          <img src="img/logo-tablet.svg" width="172" height="57" alt="Логотип Кэт энерджи">
-        </a>
-        <a class="page-header__logo-desktop">
-          <img src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Кэт энерджи">
-        </a>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="page-header__toggle-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper main-nav__wrapper--menu">
           <ul class="main-nav__list main-nav__list--wrapper site-list">
             <li class="site-list__item site-list__item--wrapper">
@@ -45,9 +41,9 @@
         <div class="catalog__wrapper">
           <ul class="catalog__list">
             <li class="catalog__item product-item">
-              <div class="product__item-wrapper">
+              <div class="product-item__wrapper">
                 <img class="product-item__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Упаковка корма">
-                <div class="product__item-description">
+                <div class="product-item__description">
                   <h3 class="product-item__title">Cat Energy Pro 500 г</h3>
                   <ul class="product-item__list">
                     <li class="product-item__item specifications">
@@ -68,13 +64,13 @@
                 </div>
               </div>
 
-              <button class="product-item__button button--green" type="button">Заказать</button>
+              <button class="product-item__button button-green" type="button">Заказать</button>
             </li>
 
             <li class="catalog__item product-item">
-              <div class="product__item-wrapper">
+              <div class="product-item__wrapper">
                 <img class="product-item__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Упаковка корма">
-                <div class="product__item-description">
+                <div class="product-item__description">
                   <h3 class="product-item__title">Cat Energy Pro 1000 г</h3>
                   <ul class="product-item__list">
                     <li class="product-item__item specifications">
@@ -95,13 +91,13 @@
                 </div>
               </div>
 
-              <button class="product-item__button button--green" type="button">Заказать</button>
+              <button class="product-item__button button-green" type="button">Заказать</button>
             </li>
 
             <li class="catalog__item product-item">
-              <div class="product__item-wrapper">
+              <div class="product-item__wrapper">
                 <img class="product-item__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Упаковка корма">
-                <div class="product__item-description">
+                <div class="product-item__description">
                   <h3 class="product-item__title">Cat Energy Pro 500 г</h3>
                   <ul class="product-item__list">
                     <li class="product-item__item specifications">
@@ -122,13 +118,13 @@
                 </div>
               </div>
 
-              <button class="product-item__button button--green" type="button">Заказать</button>
+              <button class="product-item__button button-green" type="button">Заказать</button>
             </li>
 
             <li class="catalog__item product-item">
-              <div class="product__item-wrapper">
+              <div class="product-item__wrapper">
                 <img class="product-item__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Упаковка корма">
-                <div class="product__item-description">
+                <div class="product-item__description">
                   <h3 class="product-item__title">Cat Energy Pro 1000 г</h3>
                   <ul class="product-item__list">
                     <li class="product-item__item specifications">
@@ -149,13 +145,13 @@
                 </div>
               </div>
 
-              <button class="product-item__button button--green" type="button">Заказать</button>
+              <button class="product-item__button button-green" type="button">Заказать</button>
             </li>
 
             <li class="catalog__item product-item">
-              <div class="product__item-wrapper">
+              <div class="product-item__wrapper">
                 <img class="product-item__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Упаковка корма">
-                <div class="product__item-description">
+                <div class="product-item__description">
                   <h3 class="product-item__title">Cat Energy Slim 500 г</h3>
                   <ul class="product-item__list">
                     <li class="product-item__item specifications">
@@ -176,13 +172,13 @@
                 </div>
               </div>
 
-              <button class="product-item__button button--green" type="button">Заказать</button>
+              <button class="product-item__button button-green" type="button">Заказать</button>
             </li>
 
             <li class="catalog__item product-item">
-              <div class="product__item-wrapper">
+              <div class="product-item__wrapper">
                 <img class="product-item__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Упаковка корма">
-                <div class="product__item-description">
+                <div class="product-item__description">
                   <h3 class="product-item__title">Cat Energy Slim 1000 г</h3>
                   <ul class="product-item__list">
                     <li class="product-item__item specifications">
@@ -203,13 +199,13 @@
                 </div>
               </div>
 
-              <button class="product-item__button button--green" type="button">Заказать</button>
+              <button class="product-item__button button-green" type="button">Заказать</button>
             </li>
 
             <li class="catalog__item product-item">
-              <div class="product__item-wrapper">
+              <div class="product-item__wrapper">
                 <img class="product-item__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Упаковка корма">
-                <div class="product__item-description">
+                <div class="product-item__description">
                   <h3 class="product-item__title">Cat Energy Slim 500 г</h3>
                   <ul class="product-item__list">
                     <li class="product-item__item specifications">
@@ -230,14 +226,14 @@
                 </div>
               </div>
 
-              <button class="product-item__button button--green" type="button">Заказать</button>
+              <button class="product-item__button button-green" type="button">Заказать</button>
             </li>
 
             <li class="catalog__item product-item product-item--show">
               <img class="product-item__image-plus" src="img/icon-plus-mobile.svg" width="30" height="30" alt="Плюс">
               <h3 class="product-item__title product-item__title--show">Показать еще 100500 товаров</h3>
               <p class="product-item__text">На самом деле вкусов гораздо больше!</p>
-              <button class="product-item__button button--grey" type="button">Показать все</button>
+              <button class="product-item__button product-item__button--padding button-grey" type="button">Показать все</button>
             </li>
           </ul>
         </div>
@@ -247,7 +243,7 @@
         <h2 class="additional__header">Дополнительные товары</h2>
         <div class="additional__wrapper">
           <ul class="additional__list">
-            <li class="additional__item additional-product">
+            <li class="additional__item additional-product additional-product--border">
               <div class="additional-product__item">
                 <h3 class="additional-product__title">Сахарозаменитель</h3>
                 <div class="additional-product__wrapper">
@@ -295,11 +291,14 @@
       </section>
 
       <section class="present">
-        <h2 class="visually-hidden">Подарок за заказ</h2>
-        <div class="present-wrapper">
-          <img class="present__image" src="img/icon-gift.svg" width="56" height="60" alt="Подарок">
-          <p class="present__description">Закажи все и получи чехол для кота в подарок!</p>
+        <div class="present__wrapper">
+          <h2 class="visually-hidden">Подарок за заказ</h2>
+          <div class="present-wrapper">
+            <img class="present__image" src="img/icon-gift.svg" width="56" height="60" alt="Подарок">
+            <p class="present__description">Закажи все<br>и получи чехол для кота в подарок!</p>
+          </div>
         </div>
+
       </section>
 
       <section class="map map--color">
@@ -307,9 +306,11 @@
           <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
-        <img class="map__image-big" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Карта">
-        <img class="map__image-desktop" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Карта">
+        <picture class="map__image">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+        </picture>
       </section>
     </main>
 
@@ -343,5 +344,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
