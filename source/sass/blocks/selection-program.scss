@@ -29,7 +29,7 @@
   border-radius: 50%;
 }
 
-.radio {
+.selection-program__radio-button {
   content: "";
   position: absolute;
   top: 2px;
@@ -43,7 +43,7 @@
   border-radius: 50%;
 }
 
-.selection-program__radio:checked + .radio {
+.selection-program__radio:checked + .selection-program__radio-button {
   display: block;
 }
 
@@ -64,7 +64,7 @@
     height: 38px;
   }
 
-  .radio {
+  .selection-program__radio-button {
     top: 1px;
     left: -44px;
 

@@ -51,11 +51,6 @@
     @include font(16px, 20px, 400);
     text-align: right;
   }
-
-  .map__image img {
-    width: 767px;
-    height: 400px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -73,10 +68,5 @@
     width: 403px;
 
     background-color: white;
-  }
-
-  .map__image img {
-    width: 1440px;
-    height: 400px;
   }
 }

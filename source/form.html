@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a>
+        <a href="index.html">
           <picture class="page-header__logo-image">
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -45,17 +45,17 @@
               <ul class="selection__list name-list">
                 <li class="name-list__item">
                   <label class="name-list__value" for="name-cat">Имя:<sup>*</sup></label>
-                  <input class="name-list__window" type="text" name="name" id="name-cat" value="Барсик">
+                  <input class="name-list__window" type="text" name="name" id="name-cat" placeholder="Барсик">
                 </li>
 
                 <li class="name-list__item">
                   <label class="name-list__value" for="weight-cat">Вес(кг):<sup>*</sup></label>
-                  <input class="name-list__window" type="text" name="weight" id="weight-cat" value="7">
+                  <input class="name-list__window" type="text" name="weight" id="weight-cat" placeholder="7">
                 </li>
 
                 <li class="name-list__item">
                   <label class="name-list__value" for="age-cat">Возраст(лет):</label>
-                  <input class="name-list__window" type="text" name="age" id="age-cat" value="7">
+                  <input class="name-list__window" type="text" name="age" id="age-cat" placeholder="7">
                 </li>
               </ul>
             </div>
@@ -64,19 +64,19 @@
               <ul class="selection__list selection-program">
                 <li class="selection-program__item">
                   <input class="visually-hidden selection-program__radio" type="radio" name="advice" id="thin-cat" checked>
-                  <span class="radio"></span>
+                  <span class="selection-program__radio-button"></span>
                   <label class="selection-program__value" for="thin-cat">Похудение</label>
                 </li>
 
                 <li class="selection-program__item">
                   <input class="visually-hidden selection-program__radio" type="radio" name="advice" id="inflated-cat">
-                  <span class="radio"></span>
+                  <span class="selection-program__radio-button"></span>
                   <label class="selection-program__value" for="inflated-cat">Набор массы</label>
                 </li>
 
                 <li class="selection-program__item">
                   <input class="visually-hidden selection-program__radio" type="radio" name="advice" id="advice-cat">
-                  <span class="radio"></span>
+                  <span class="selection-program__radio-button"></span>
                   <label class="selection-program__value" for="advice-cat">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
@@ -89,13 +89,13 @@
               <ul class="selection__list contacts-list">
                 <li class="contacts-list__item">
                   <label class="contacts-list__value" for="email">E-mail:<sup>*</sup></label>
-                  <input class="contacts-list__window" type="email" name="email" id="email" value="kuklachev@gmail.com">
+                  <input class="contacts-list__window" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
                   <img class="contacts-list__image contacts-list__image--top" src="img/icon-mail.svg" width="17" height="13" alt="email">
                 </li>
 
                 <li class="contacts-list__item">
                   <label class="contacts-list__value" for="phone">Телефон:<sup>*</sup></label>
-                  <input class="contacts-list__window" type="tel" name="phone" id="phone" value="8(960)900-60-90">
+                  <input class="contacts-list__window" type="tel" name="phone" id="phone" placeholder="8(960)900-60-90">
                   <img class="contacts-list__image" src="img/icon-phone.svg" width="20" height="20" alt="phone">
                 </li>
               </ul>
@@ -106,7 +106,7 @@
             <h2 class="selection__title selection__title--comment">Комментарий</h2>
             <div class="selection__filter comment">
               <label>
-                <textarea class="comment__window" name="comment">Расскажите обо всех повадках кота</textarea>
+                <textarea class="comment__window" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </div>
           </div>
@@ -117,25 +117,25 @@
               <ul class="selection__list additionally-list">
                 <li class="additionally-list__item">
                   <input class="visually-hidden additionally-list__window" type="checkbox" name="sugar" id="sugar" checked>
-                  <span class="check-box"></span>
+                  <span class="additionally-list__check-box"></span>
                   <label class="additionally-list__value" for="sugar">Сахарозаменитель</label>
                 </li>
 
                 <li class="additionally-list__item">
                   <input class="visually-hidden additionally-list__window" type="checkbox" name="water" id="water">
-                  <span class="check-box"></span>
+                  <span class="additionally-list__check-box"></span>
                   <label class="additionally-list__value" for="water">Питьевая вода</label>
                 </li>
 
                 <li class="additionally-list__item">
                   <input class="visually-hidden additionally-list__window" type="checkbox" name="milk" id="milk">
-                  <span class="check-box"></span>
+                  <span class="additionally-list__check-box"></span>
                   <label class="additionally-list__value" for="milk">Молоко</label>
                 </li>
 
                 <li class="additionally-list__item">
                   <input class="visually-hidden additionally-list__window" type="checkbox" name="vitamins" id="vitamins">
-                  <span class="check-box"></span>
+                  <span class="additionally-list__check-box"></span>
                   <label class="additionally-list__value additionally-list__value--padding" for="vitamins">Витамины</label>
                 </li>
               </ul>
@@ -158,15 +158,15 @@
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <picture class="map__image">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
         </picture>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="img/logo-footer.svg" width="127" height="23" alt="Кэт энерджи">
       </a>
       <div class="page-footer__wrapper">
@@ -189,13 +189,14 @@
         </ul>
       </div>
       <div class="academy-logo">
-        <div class="academy-logo__text">HTML Academy</div>
-        <a href="#">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="academy-logo__text">HTML Academy</div>
           <img class="academy-logo__image" src="img/htmlacademy.svg" width="60" height="60" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
