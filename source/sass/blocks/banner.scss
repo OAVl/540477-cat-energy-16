@@ -6,6 +6,11 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 320px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .banner__header {
@@ -44,6 +49,15 @@
   border: none;
 }
 
+.banner__button a {
+  text-decoration: none;
+  color: white;
+
+  &:active {
+    color: #8fc46e;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .banner {
     position: relative;
@@ -70,8 +84,6 @@
   }
 
   .banner__image img {
-    width: 709px;
-    height: 609px;
     margin-left: 30px;
   }
 
@@ -80,7 +92,7 @@
     top: 265px;
     left: 120px;
 
-    width: 245px;
+    width: 246px;
 
     padding-left: 25px;
     padding-right: 29px;
@@ -105,8 +117,5 @@
     position: absolute;
     top: -50px;
     left: 460px;
-
-    width: 552px;
-    height: 499px;
   }
 }

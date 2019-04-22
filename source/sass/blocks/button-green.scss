@@ -1,0 +1,12 @@
+.button-green {
+  background-color: $main-color;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
+  }
+}

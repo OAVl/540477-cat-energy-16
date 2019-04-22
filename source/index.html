@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
@@ -41,11 +41,11 @@
           <h1 class="banner__header">Функциональное питание для котов</h1>
           <p class="banner__slogan">Занялся собой? Займись котом!</p>
           <picture class="banner__image">
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Питание">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Питание">
           </picture>
-          <button class="banner__button button-green" type="button">Подобрать программу</button>
+          <button class="banner__button button-green" type="button"><a href="form.html">Подобрать программу</a></button>
         </div>
       </section>
 
@@ -91,27 +91,31 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="img/advantage-leaf@1x.png" width="50" height="50" alt="Питательные вещества">
+                <img class="advantages__image" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png" width="50" height="50" alt="Питательные вещества">
               </div>
               <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+              <div class="advantages__number">1</div>
             </li>
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="img/advantage-powder@1x.png" width="50" height="50" alt="Вид порошка">
+                <img class="advantages__image" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png" width="50" height="50" alt="Вид порошка">
               </div>
               <p class="advantages__description">Выпускается в виде порошка, который надо лишь залить кипятком и готово.</p>
+              <span class="advantages__number">2</span>
             </li>
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="img/advantage-dining@1x.png" width="50" height="50" alt="Еда">
+                <img class="advantages__image" src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png" width="50" height="50" alt="Еда">
               </div>
               <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <span class="advantages__number">3</span>
             </li>
             <li class="advantages__item">
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="img/advantage-clock@1x.png" width="50" height="50" alt="Часы">
+                <img class="advantages__image" src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png" width="50" height="50" alt="Часы">
               </div>
               <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <span class="advantages__number">4</span>
             </li>
           </ul>
         </div>
@@ -141,9 +145,9 @@
             <div class="example__expenses">Затраты на питание: <span class="example__expenses-price">15 000 руб.</span></div>
           </div>
           <picture class="example__image">
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-            <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот">
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот">
           </picture>
           <div class="example__result">
             <span class="example__result-start">Было</span>
@@ -159,9 +163,9 @@
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <picture class="map__image">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
         </picture>
       </section>
     </main>
@@ -190,13 +194,14 @@
         </ul>
       </div>
       <div class="academy-logo">
-        <div class="academy-logo__text">HTML Academy</div>
-        <a href="#">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="academy-logo__text">HTML Academy</div>
           <img class="academy-logo__image" src="img/htmlacademy.svg" width="60" height="60" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
