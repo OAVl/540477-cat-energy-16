@@ -20,6 +20,7 @@
 .additional-product__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 14px;
 
   @include font(14px, 14px, 400);
@@ -48,6 +49,7 @@
   .additional-product__item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 632px;
   }
