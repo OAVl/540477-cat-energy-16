@@ -15,6 +15,14 @@
 .page-header__logo-image img {
   margin-left: 20px;
   margin-top: 11px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) {

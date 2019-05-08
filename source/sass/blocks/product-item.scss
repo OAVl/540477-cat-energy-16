@@ -20,6 +20,14 @@
   padding-top: 25px;
   padding-bottom: 19px;
   width: 100px;
+
+  @include font(16px, 20px, 400);
+  text-transform: uppercase;
+
+  &--show {
+    width: 204px;
+    padding-left: 40px;
+  }
 }
 
 .product-item__description a {
@@ -39,16 +47,6 @@
   color: white;
 
   border: none;
-}
-
-.product-item__title {
-  @include font(16px, 20px, 400);
-  text-transform: uppercase;
-
-  &--show {
-    width: 204px;
-    padding-left: 40px;
-  }
 }
 
 .product-item__list {
@@ -75,7 +73,7 @@
   padding-bottom: 22px;
 
   @include font(12px, 16px, 400);
-  font-family: $second-font
+  font-family: $second-font;
 }
 
 @media (min-width: $tablet-width) {

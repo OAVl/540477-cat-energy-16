@@ -8,6 +8,10 @@
   padding-bottom: 22px;
 }
 
+.academy-logo a {
+  text-decoration: none;
+}
+
 .academy-logo__text {
   margin: 0;
   padding-top: 9px;
@@ -22,7 +26,10 @@
   width: 27px;
   height: 34px;
 
-  fill: #666666;
+  &:hover {
+    fill: #68b738;
+  }
+
 }
 
 @media (min-width: $tablet-width) {

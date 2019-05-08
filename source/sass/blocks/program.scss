@@ -146,7 +146,8 @@
     height: 194px;
 
     &--padding {
-      left: 390px;
+      top: 50px;
+      left: 375px;
 
       width: 269px;
       height: 112px;
@@ -159,11 +160,6 @@
 
     width: 200px;
     height: 200px;
-  }
-
-  .program__image--padding {
-    top: 50px;
-    left: 375px;
   }
 
   .program__background--padding {
@@ -257,6 +253,4 @@
     padding-right: 56px;
     padding-bottom: 62px;
   }
-
-
 }
