@@ -15,8 +15,8 @@
 
 .banner__header {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   @include font(36px, 36px, 400);
 }
@@ -31,8 +31,8 @@
 
 .banner__image img {
   margin: 0;
-
-  padding-bottom: 15px;
+  margin-bottom: -2px;
+  padding-bottom: 0;
 }
 
 .banner__button {
@@ -71,14 +71,15 @@
   .banner__header {
     width: 427px;
     margin-left: 120px;
-    padding-bottom: 45px;
+    padding-bottom: 41px;
+    padding-top: 38px;
 
     @include font(60px, 60px, 400);
   }
 
   .banner__slogan {
     margin-left: 120px;
-    padding-bottom: 21px;
+    padding-bottom: 20px;
 
     @include font(20px, 20px, 400);
   }
@@ -89,7 +90,7 @@
 
   .banner__button {
     position: absolute;
-    top: 265px;
+    top: 268px;
     left: 120px;
 
     width: 246px;
@@ -106,6 +107,10 @@
     position: relative;
   }
 
+  .banner__header {
+    padding-top: 21px;
+  }
+
   .banner__wrapper {
     position: absolute;
     top: -575px;
@@ -115,7 +120,11 @@
   .banner__image img {
     display: block;
     position: absolute;
-    top: -50px;
+    top: -60px;
     left: 460px;
+  }
+
+  .banner__button {
+    margin-top: -12px;
   }
 }

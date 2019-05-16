@@ -1,11 +1,17 @@
 .academy-logo {
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  width: 286px;
   margin: 0;
   padding-left: 20px;
-  padding-top: 22px;
+  padding-top: 18px;
   padding-bottom: 22px;
+}
+
+.academy-logo__active {
+  display: flex;
+  justify-content: space-between;
+  width: 286px;
 }
 
 .academy-logo a {
@@ -19,22 +25,30 @@
   @include font(16px, 16px, 400);
   font-family: $second-font;
   color: #444444;
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .academy-logo__image {
   margin: 0;
-  width: 27px;
-  height: 34px;
+  width: 37px;
+  height: 38px;
 
-  &:hover {
+  path:hover {
     fill: #68b738;
   }
 
+  path:active {
+    fill: #68b738;
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .academy-logo {
-    width: 162px;
-    padding-top: 58px;
+    width: 167px;
+    padding-top: 54px;
   }
 }

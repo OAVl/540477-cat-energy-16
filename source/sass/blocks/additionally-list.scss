@@ -1,11 +1,11 @@
 .additionally-list {
-  padding-bottom: 19px;
+  padding-bottom: 12px;
 }
 
 .additionally-list__item {
   position: relative;
 
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 
   &:active {
     opacity: 0.5;
@@ -25,6 +25,10 @@
   height: 28px;
 
   border: 1px solid #cecece;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .additionally-list__check-box {
@@ -50,6 +54,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 653px;
+    padding-bottom: 7px;
   }
 
   .additionally-list__item {
@@ -78,7 +83,17 @@
 
 @media (min-width: $desktop-width) {
   .additionally-list {
-    flex-wrap: nowrap;
-    width: 1220px;
+    flex-wrap: wrap;
+    width: 1160px;
+  }
+
+  .additionally-list__item {
+    padding-right: 0;
+    padding-bottom: 9px;
+    width: 325px;
+  }
+
+  .additionally-list__item:nth-child(4) {
+    width: 185px;
   }
 }

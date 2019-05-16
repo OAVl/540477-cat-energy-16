@@ -2,7 +2,8 @@
   position: relative;
 
   display: flex;
-  margin-bottom: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
 }
 
 .contacts-list__value {
@@ -19,6 +20,18 @@
   text-transform: uppercase;
 
   border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid black;
+  }
+
+  &:invalid {
+    border: 1px solid red;
+  }
 }
 
 .contacts-list__image {
@@ -29,20 +42,36 @@
   &--top {
     top: 20px;
   }
+
+  &:active {
+    fill: #68b738;
+  }
+
+  &:invalid {
+    fill: red;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .contacts-list__item {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .contacts-list__image {
     top: 17px;
-    left: 593px;
+    left: 595px;
 
     &--top {
       top: 19px;
     }
+  }
+
+  .contacts-list__window {
+    margin-left: 19px;
+  }
+
+  .contacts-list__window--email {
+    padding-left: 22px;
   }
 }
 
@@ -50,6 +79,7 @@
   .contacts-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1220px;
   }
 

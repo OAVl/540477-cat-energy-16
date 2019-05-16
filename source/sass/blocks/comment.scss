@@ -1,7 +1,7 @@
 .comment__window {
   width: 280px;
-  min-height: 148px;
-  padding-top: 15px;
+  min-height: 134px;
+  padding-top: 12px;
 
   @include font(16px, 18px, 400);
   text-transform: uppercase;
@@ -14,8 +14,9 @@
   .comment__window {
     margin-left: 40px;
     padding-left: 20px;
-    width: 630px;
-    min-height: 173px;
+    padding-top: 9px;
+    width: 609px;
+    min-height: 161px;
 
     @include font(20px, 30px, 400);
     text-align: left;

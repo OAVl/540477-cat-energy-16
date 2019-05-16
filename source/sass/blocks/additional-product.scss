@@ -10,8 +10,9 @@
 
 .additional-product__title {
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  padding-left: 2px;
 
   @include font(16px, 16px, 400);
   text-transform: uppercase;
@@ -21,29 +22,44 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
 
   @include font(14px, 14px, 400);
   font-family: $second-font;
 }
 
 .additional-product__button {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
+  margin-left: 2px;
+
+  @include font(16px, 16px, 400);
 }
 
 @media (min-width: $tablet-width) {
   .additional-product__title {
-    padding-top: 28px;
-    padding-bottom: 27px;
+    padding-top: 25px;
+    padding-bottom: 24px;
 
     @include font(20px, 20px, 400);
   }
 
   .additional-product__wrapper {
     width: 226px;
-    padding-top: 33px;
+    padding-top: 30px;
 
     @include font(16px, 20px, 400);
+
+    &--water {
+      width: 160px;
+    }
+
+    &--milk {
+      width: 141px;
+    }
+
+    &--vit {
+      width: 215px;
+    }
   }
 
   .additional-product__item {
@@ -57,6 +73,7 @@
   .additional-product__button {
     width: 633px;
     margin-left: 38px;
+    margin-bottom: 27px;
   }
 }
 
@@ -69,11 +86,16 @@
 
   .additional-product__item {
     margin-left: 0;
+    margin-right: 3px;
   }
 
   .additional-product__button {
     width: 245px;
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
+  }
+
+  .additional-product__wrapper {
+    width: 285px;
   }
 }

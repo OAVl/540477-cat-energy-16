@@ -1,11 +1,12 @@
 .name-list {
-  padding-bottom: 24px;
+  padding-bottom: 11px;
 
   border-bottom: 1px solid #e6e6e6;
 }
 
 .name-list__item {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 14px;
 }
 
@@ -16,22 +17,41 @@
 .name-list__window {
   flex-grow: 1;
   padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 12px;
   margin-left: 15px;
 
   text-transform: uppercase;
 
   border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid black;
+  }
+
+  &:invalid {
+    border: 1px solid red;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .name-list {
+    padding-bottom: 51px;
+
     border-bottom: none;
   }
 
   .name-list__item {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  .name-list__window {
+    margin-left: 20px;
+    padding-left: 18px;
   }
 }
 

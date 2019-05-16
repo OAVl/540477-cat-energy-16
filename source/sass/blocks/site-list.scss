@@ -6,7 +6,7 @@
 
 .site-list__item {
   margin-bottom: 24px;
-  padding-top: 24px;
+  padding-top: 21px;
 
   border-top: 1px solid #e6e6e6;
 }
@@ -26,7 +26,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    margin-top: 43px;
+    margin-top: 52px;
 
     &--active {
       border-bottom: 2px solid white;

@@ -7,8 +7,8 @@
   position: relative;
 
   margin: 0;
-  padding-top: 32px;
-  padding-bottom: 31px;
+  padding-top: 28px;
+  padding-bottom: 34px;
 
   @include font(24px, 24px, 400);
 
@@ -18,8 +18,8 @@
 .additional__header::before {
   content: "";
   position: absolute;
-  top: 47px;
-  left: 247px;
+  top: 42px;
+  left: 249px;
 
   width: 53px;
   height: 3px;
@@ -38,15 +38,15 @@
   }
 
   .additional__header {
-    padding-top: 72px;
-    padding-bottom: 76px;
+    padding-top: 64px;
+    padding-bottom: 79px;
     padding-left: 38px;
 
     @include font(36px, 36px, 400);
   }
 
   .additional__header::before {
-    top: 94px;
+    top: 86px;
     left: 412px;
 
     width: 328px;
@@ -55,7 +55,7 @@
   .additional__header::after {
     content: "";
     position: absolute;
-    top: 94px;
+    top: 86px;
     left: -32px;
 
     width: 29px;
@@ -72,19 +72,23 @@
   }
 
   .additional__header {
+    padding-top: 74px;
+    padding-bottom: 80px;
     padding-left: 0;
 
     border-bottom: none;
   }
 
   .additional__header::after {
+    top: 96px;
     left: -110px;
 
     width: 70px;
   }
 
   .additional__header::before {
-    left: 382px;
+    top: 96px;
+    left: 373px;
 
     width: 957px;
   }
