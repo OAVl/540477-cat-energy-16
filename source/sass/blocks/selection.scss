@@ -5,8 +5,8 @@
 
 .selection__header {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 14px;
+  padding-bottom: 25px;
 
   @include font(36px, 60px, 400);
 }
@@ -14,7 +14,7 @@
 .selection__description {
   width: 227px;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
 
   @include font(14px, 18px, 400);
   text-transform: uppercase;
@@ -34,7 +34,6 @@
   position: relative;
 }
 
-
 .selection__title--contact::after {
   content: "";
   position: absolute;
@@ -50,7 +49,7 @@
 .selection__title--comment::after {
   content: "";
   position: absolute;
-  top: 42px;
+  top: 30px;
   left: 142px;
 
   width: 158px;
@@ -62,7 +61,7 @@
 .selection__title--additionally::after {
   content: "";
   position: absolute;
-  top: 42px;
+  top: 39px;
   left: 164px;
 
   width: 136px;
@@ -73,19 +72,34 @@
 
 .selection__title {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 
   @include font(24px, 24px, 400);
+
+  &--comment {
+    padding-top: 16px;
+    padding-bottom: 35px;
+  }
+
+  &--additionally {
+    padding-top: 25px;
+    padding-bottom: 41px;
+  }
 }
 
 .selection__legend {
-  padding-top: 24px;
+  padding-top: 20px;
   padding-bottom: 34px;
 
   @include font(14px, 16px, 400);
   font-family: $second-font;
   text-align: center;
+}
+
+.selection__button {
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -98,12 +112,16 @@
   }
 
   .selection__header {
+    padding-top: 37px;
+    padding-bottom: 56px;
+
     @include font(60px, 60px, 400);
   }
 
   .selection__description {
     width: 327px;
     margin-left: 40px;
+    padding-bottom: 65px;
 
     @include font(20px, 30px, 400);
   }
@@ -116,25 +134,56 @@
 
   .selection__title {
     margin-left: 40px;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    padding-bottom: 76px;
+    padding-top: 76px;
 
     @include font(36px, 36px, 400);
+
+    &--comment {
+      padding-top: 45px;
+    }
+
+    &--additionally {
+      padding-top: 62px;
+      padding-bottom: 65px;
+    }
   }
 
   .selection__title--contact::after {
-    top: 90px;
+    top: 98px;
     left: 593px;
 
     width: 146px;
   }
 
-  .selection__title--contact::before,
-  .selection__title--comment::before,
+  .selection__title--contact::before {
+    content: "";
+    position: absolute;
+    top: 98px;
+    left: -30px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $main-color;
+  }
+
   .selection__title--additionally::before {
     content: "";
     position: absolute;
-    top: 90px;
+    top: 84px;
+    left: -30px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $main-color;
+  }
+
+  .selection__title--comment::before {
+    content: "";
+    position: absolute;
+    top: 67px;
     left: -30px;
 
     width: 30px;
@@ -144,14 +193,14 @@
   }
 
   .selection__title--comment::after {
-    top: 90px;
+    top: 67px;
     left: 260px;
 
     width: 479px;
   }
 
   .selection__title--additionally::after {
-    top: 90px;
+    top: 84px;
     left: 293px;
 
     width: 446px;
@@ -165,7 +214,8 @@
   }
 
   .selection__legend {
-    padding-top: 16px;
+    padding-top: 17px;
+    padding-bottom: 20px;
 
     @include font(16px, 16px, 400);
   }
@@ -173,7 +223,8 @@
   .selection__wrapper-button {
     display: flex;
     justify-content: space-between;
-    width: 522px;
+    flex-wrap: wrap;
+    width: 525px;
     margin-left: 40px;
     margin-bottom: 72px;
   }
@@ -185,7 +236,7 @@
   }
 
   .selection__header {
-    padding-top: 80px;
+    padding-top: 54px;
     padding-bottom: 55px;
   }
 
@@ -196,32 +247,65 @@
   .selection__wrapper--display {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1220px;
   }
 
   .selection__title {
-    padding-bottom: 70px;
+    padding-bottom: 74px;
+    padding-top: 0;
     margin-left: 0;
+
+    &--comment {
+      padding-top: 48px;
+    }
+
+    &--additionally {
+      padding-top: 65px;
+      padding-bottom: 66px;
+    }
   }
 
   .selection__title--contact::after {
-    width: 777px;
+    top: 21px;
+    left: 553px;
+
+    width: 817px;
   }
 
-  .selection__title--contact::before,
-  .selection__title--comment::before,
+  .selection__title--contact::before {
+    top: 21px;
+    left: -110px;
+
+    width: 70px;
+  }
+
   .selection__title--additionally::before {
+    top: 86px;
+    left: -110px;
+
+    width: 70px;
+  }
+
+  .selection__title--comment::before {
+    top: 69px;
     left: -110px;
 
     width: 70px;
   }
 
   .selection__title--comment::after {
-    width: 1112px;
+    top: 69px;
+    left: 220px;
+
+    width: 1152px;
   }
 
   .selection__title--additionally::after {
-    width: 1083px;
+    top: 86px;
+    left: 253px;
+
+    width: 1123px;
   }
 
   .selection__list {
@@ -233,7 +317,11 @@
   }
 
   .selection__wrapper-button {
-    width: 838px;
+    width: 830px;
     margin-left: 0;
+  }
+
+  .selection__legend {
+    padding-bottom: 30px;
   }
 }

@@ -13,8 +13,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -64px;
-  left: 275px;
+  top: -62px;
+  left: 280px;
 
   @include toggle();
   background-image: url("../img/icon-mobile-menu.svg");
@@ -28,6 +28,10 @@
 @media (max-width: $mobile-width-only) {
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
   }
 
   .main-nav--nojs .main-nav__list {
