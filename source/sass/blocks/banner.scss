@@ -1,5 +1,6 @@
 .banner {
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
 
   text-align: center;
   color: white;
@@ -62,6 +63,9 @@
   .banner {
     position: relative;
 
+    margin: 0 auto;
+    width: 768px;
+
     text-align: left;
     color: black;
 
@@ -105,6 +109,9 @@
 @media (min-width: $desktop-width) {
   .banner {
     position: relative;
+
+    margin: 0 auto;
+    width: 1440px;
   }
 
   .banner__header {
@@ -113,7 +120,7 @@
 
   .banner__wrapper {
     position: absolute;
-    top: -575px;
+    top: -574px;
     left: 70px;
   }
 

@@ -39,20 +39,15 @@
   background-color: #f2f2f2;
 }
 
-.map__image--pin img {
-  position: absolute;
-  top: 252px;
-  left: 128px;
-
-  width: 60px;
-  height: 53px;
+.map__iframe {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
     justify-content: space-between;
 
-    width: 630px;
+    width: 653px;
     padding-top: 65px;
     padding-bottom: 51px;
   }
@@ -70,27 +65,21 @@
     text-align: right;
   }
 
-  .map__image--pin img {
-    position: absolute;
-    top: 348px;
-    left: 324px;
-
-    width: 120px;
-    height: 106px;
-  }
-
   .map__address:nth-child(1) {
     margin-bottom: 20px;
   }
 
   .map__wrapper-address {
-    width: 157px;
+    width: 184px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
+  .map-container {
     position: relative;
+
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .map__wrapper {
@@ -103,12 +92,6 @@
     width: 427px;
 
     background-color: white;
-  }
-
-  .map__image--pin img {
-    position: absolute;
-    top: 151px;
-    left: 998px;
   }
 
   .map__address {

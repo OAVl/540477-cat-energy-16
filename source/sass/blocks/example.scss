@@ -6,9 +6,10 @@
 }
 
 .example__header {
-  margin: 0;
+  margin: 0 auto;
   padding-left: 20px;
   padding-bottom: 23px;
+  width: 320px;
 
   @include font(36px, 60px, 400);
 }
@@ -128,6 +129,13 @@
   border-radius: 10px;
 }
 
+.example__container {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .example {
     position: relative;
@@ -137,9 +145,18 @@
     background-color: white;
   }
 
+  .example__container {
+    position: relative;
+
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .example__header {
+    margin: 0 auto;
     padding-left: 30px;
     margin-bottom: 40px;
+    width: 768px;
 
     @include font(60px, 60px, 400);
   }
@@ -200,7 +217,7 @@
 
   .example__image img {
     position: absolute;
-    top: 396px;
+    top: 249px;
     left: 46px;
   }
 
@@ -292,17 +309,25 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    margin: 0 auto;
     margin-top: -22px;
-    width: 1440px;
+    padding-top: 0;
+  }
+
+  .example__color {
+    background: linear-gradient(to left, #eaeaea 50%, #f2f2f2 50%);
   }
 
   .example__header {
-    padding-left: 110px;
+    padding-left: 0;
+    margin: 0 auto;
     margin-bottom: 48px;
+    width: 1220px;
   }
 
   .example__description {
     width: 433px;
+    padding-left: 0;
   }
 
   .example__list {
@@ -316,7 +341,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 370px;
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   .example__expenses {
@@ -328,28 +353,37 @@
 
   .example__image img {
     position: absolute;
-    top: -66px;
-    left: 680px;
+    top: -295px;
+    left: 570px;
   }
 
   .example__result {
     width: 670px;
     padding-top: 0;
-    padding-right: 110px;
+    padding-right: 79px;
     margin-right: 2px;
-    margin-top: -25px;
+    margin-top: -26px;
     padding-bottom: 65px;
 
     text-align: right;
 
-    background: linear-gradient(to left, #eaeaea 50.5%, #f2f2f2 50%);
+    background: linear-gradient(to left, #eaeaea 48.5%, #f2f2f2 48%);
   }
 
   .example__wrapper-background {
+    width: 1300px;
+    margin: 0 auto;
     padding-top: 76px;
     padding-left: 80px;
 
-    background: linear-gradient(to left, #eaeaea 27.5%, #f2f2f2 27%);
+    background: linear-gradient(to left, #eaeaea 26.5%, #f2f2f2 26%);
+  }
+
+  .example__container {
+    position: relative;
+
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .example__item-description {

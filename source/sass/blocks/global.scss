@@ -22,7 +22,7 @@ body {
 body {
   padding: 0;
   margin: 0 auto;
-  width: 320px;
+  width: auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -31,12 +31,12 @@ body {
 
 @media (min-width: $tablet-width) {
   body {
-    width: 768px;
+    width: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
-    width: 1440px;
+    width: auto;
   }
 }

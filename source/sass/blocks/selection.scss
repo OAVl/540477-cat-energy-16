@@ -1,4 +1,8 @@
-.selection {
+.selection__wrapper-header,
+.selection__container-title,
+.selection__filter--wrapper,
+.selection__filter--width,
+.selection__wrapper-button {
   width: 280px;
   margin: 0 auto;
 }
@@ -40,7 +44,7 @@
   top: 42px;
   left: 200px;
 
-  width: 100px;
+  width: 100%;
   height: 3px;
 
   background-color: $main-color;
@@ -52,7 +56,7 @@
   top: 30px;
   left: 142px;
 
-  width: 158px;
+  width: 100%;
   height: 3px;
 
   background-color: $main-color;
@@ -64,13 +68,15 @@
   top: 39px;
   left: 164px;
 
-  width: 136px;
+  width: 100%;
   height: 3px;
 
   background-color: $main-color;
 }
 
 .selection__title {
+  position: relative;
+
   margin: 0;
   padding-top: 28px;
   padding-bottom: 32px;
@@ -103,12 +109,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .selection {
+  .selection__wrapper-header,
+  .selection__container-title,
+  .selection__filter--wrapper,
+  .selection__filter--width,
+  .selection__button-container {
     width: 708px;
-  }
-
-  .selection__wrapper {
-    margin-right: 30px;
+    margin: 0 auto;
   }
 
   .selection__header {
@@ -133,77 +140,55 @@
   }
 
   .selection__title {
-    margin-left: 40px;
-    padding-bottom: 76px;
-    padding-top: 76px;
+    margin-top: -50px;
+    padding-left: 40px;
+    width: 554px;
 
     @include font(36px, 36px, 400);
 
+    background-color: white;
+
     &--comment {
-      padding-top: 45px;
+      margin-top: -38px;
+      width: 220px;
     }
 
     &--additionally {
-      padding-top: 62px;
-      padding-bottom: 65px;
+      margin-top: -47px;
+      width: 253px;
     }
   }
 
-  .selection__title--contact::after {
-    top: 98px;
-    left: 593px;
-
-    width: 146px;
-  }
-
-  .selection__title--contact::before {
-    content: "";
-    position: absolute;
-    top: 98px;
-    left: -30px;
-
-    width: 30px;
-    height: 3px;
-
-    background-color: $main-color;
-  }
-
-  .selection__title--additionally::before {
-    content: "";
-    position: absolute;
-    top: 84px;
-    left: -30px;
-
-    width: 30px;
-    height: 3px;
-
-    background-color: $main-color;
-  }
-
-  .selection__title--comment::before {
-    content: "";
-    position: absolute;
-    top: 67px;
-    left: -30px;
-
-    width: 30px;
-    height: 3px;
-
-    background-color: $main-color;
-  }
-
-  .selection__title--comment::after {
-    top: 67px;
-    left: 260px;
-
-    width: 479px;
-  }
-
+  .selection__title--contact::after,
+  .selection__title--comment::after,
   .selection__title--additionally::after {
-    top: 84px;
-    left: 293px;
+    display: none;
+  }
 
-    width: 446px;
+  .selection__wrapper-title {
+    display: inline-block;
+    margin-top: 98px;
+    margin-bottom: 87px;
+    width: 100%;
+    height: 3px;
+
+    background-color: $main-color;
+
+    box-sizing: border-box;
+
+    &--comment {
+      margin-top: 67px;
+    }
+
+    &--additionally {
+      margin-top: 84px;
+      margin-bottom: 76px;
+    }
+  }
+
+  .selection__container-title {
+    width: 708px;
+    margin: 0 auto;
   }
 
   .selection__button {
@@ -231,8 +216,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .selection {
+  .selection__wrapper-header,
+  .selection__container-title,
+  .selection__filter--wrapper,
+  .selection__button-container {
     width: 1220px;
+    margin: 0 auto;
+  }
+
+  .selection__filter--width {
+    width: 610px;
   }
 
   .selection__header {
@@ -249,63 +242,23 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1220px;
+    margin: 0 auto;
   }
 
-  .selection__title {
-    padding-bottom: 74px;
-    padding-top: 0;
-    margin-left: 0;
+  .selection__wrapper-title {
+    margin-top: 21px;
 
     &--comment {
-      padding-top: 48px;
+      margin-top: 69px;
     }
 
     &--additionally {
-      padding-top: 65px;
-      padding-bottom: 66px;
+      margin-top: 88px;
     }
   }
 
-  .selection__title--contact::after {
-    top: 21px;
-    left: 553px;
-
-    width: 817px;
-  }
-
-  .selection__title--contact::before {
-    top: 21px;
-    left: -110px;
-
-    width: 70px;
-  }
-
-  .selection__title--additionally::before {
-    top: 86px;
-    left: -110px;
-
-    width: 70px;
-  }
-
-  .selection__title--comment::before {
-    top: 69px;
-    left: -110px;
-
-    width: 70px;
-  }
-
-  .selection__title--comment::after {
-    top: 69px;
-    left: 220px;
-
-    width: 1152px;
-  }
-
-  .selection__title--additionally::after {
-    top: 86px;
-    left: 253px;
-
-    width: 1123px;
+  .selection__title {
+    margin-left: -40px;
   }
 
   .selection__list {

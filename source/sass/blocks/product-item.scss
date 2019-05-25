@@ -189,8 +189,11 @@
 @media (min-width: $desktop-width) {
   .product-item {
     width: 245px;
-    margin-right: 40px;
+    margin-right: 80px;
     margin-top: 142px;
+    margin-left: 0;
+
+    box-sizing: border-box;
   }
 
   .product-item__title {

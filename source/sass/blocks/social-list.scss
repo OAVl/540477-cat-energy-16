@@ -3,11 +3,8 @@
   justify-content: space-between;
   align-items: center;
   width: 125px;
-  margin: 0;
-  margin-left: 20px;
+  margin: 0 auto;
   padding: 19px 82px 21px 73px;
-
-  border-bottom: 1px solid #d9d9d9;
 
   list-style: none;
   text-decoration: none;
@@ -52,8 +49,6 @@
   .social-list {
     padding-top: 60px;
     padding-bottom: 62px;
-    padding-right: 112px;
-    margin-left: 0;
 
     border-bottom: none;
   }
